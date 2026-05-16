@@ -1,13 +1,17 @@
 import { Component } from "react";
 
-class StateComp extends Component {
+interface StateCompState {
+    name: string;
+}
+
+class StateComp extends Component<any, StateCompState> {
     constructor(props: any) {
         super(props);
         this.state = {
             name: "Ausaf"
         }
     }
-
+    
     updateName = () => {
         this.setState({ name: "React State Updated" });
     }

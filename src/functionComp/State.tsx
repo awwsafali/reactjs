@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 
 function State() {
     const [name, setName] = useState("Ausaf");
